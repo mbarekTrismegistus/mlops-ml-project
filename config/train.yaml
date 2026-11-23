@@ -9,7 +9,8 @@ split:
   random_state: 42
 
 model:
-  name: "logistic_regression"
-  max_iter: 2000
+  name: "logistic_regression"  
+  max_iter: 3000
+
 
 artifacts_dir: "artifacts"
