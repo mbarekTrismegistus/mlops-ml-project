@@ -8,5 +8,6 @@ def build_model(cfg: dict):
         raise ValueError(f"Modèle non supporté dans la baseline : {name}")
 
     return LogisticRegression(
-        max_iter=int(cfg["model"].get("max_iter", 2000))
+        max_iter=int(cfg["model"].get("max_iter", 2000)),
+        C=float(cfg["model"].get("C", 1.0)),
     )
